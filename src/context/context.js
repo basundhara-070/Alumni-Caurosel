@@ -24,5 +24,9 @@ export const builder = imageUrlBuilder(client)
 // }
 export const Projects= createContext(await client.fetch('*[_type == "projects"]'))
 export const Events= createContext(await client.fetch('*[_type == "events"]'))
+export const Alumni= createContext(await client.fetch('*[_type == "alumni"]'))
+
 export  const LevelContext = createContext(await client.fetch('*')
+// export const Achievement= createContext(await client.fetch('*[_type == "achievements"]'))
+// console.log(Achievement);
 );
